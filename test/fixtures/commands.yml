@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numclient: 1
+  refproduit: MyString
+  article: MyString
+  descriptif: MyString
+  numcommande: 1
+  quantitearticle: 1
+  totalprixarticle: 1.5
+  totalprixcommande: 1.5
+  date: 2015-06-11 14:35:57
+  produit_id: 1
+  validation: MyText
+
+two:
+  numclient: 1
+  refproduit: MyString
+  article: MyString
+  descriptif: MyString
+  numcommande: 1
+  quantitearticle: 1
+  totalprixarticle: 1.5
+  totalprixcommande: 1.5
+  date: 2015-06-11 14:35:57
+  produit_id: 1
+  validation: MyText

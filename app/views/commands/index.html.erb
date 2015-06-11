@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Commands</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numclient</th>
+      <th>Refproduit</th>
+      <th>Article</th>
+      <th>Descriptif</th>
+      <th>Numcommande</th>
+      <th>Quantitearticle</th>
+      <th>Totalprixarticle</th>
+      <th>Totalprixcommande</th>
+      <th>Date</th>
+      <th>Produit</th>
+      <th>Validation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @commands.each do |command| %>
+      <tr>
+        <td><%= command.numclient %></td>
+        <td><%= command.refproduit %></td>
+        <td><%= command.article %></td>
+        <td><%= command.descriptif %></td>
+        <td><%= command.numcommande %></td>
+        <td><%= command.quantitearticle %></td>
+        <td><%= command.totalprixarticle %></td>
+        <td><%= command.totalprixcommande %></td>
+        <td><%= command.date %></td>
+        <td><%= command.produit_id %></td>
+        <td><%= command.validation %></td>
+        <td><%= link_to 'Show', command %></td>
+        <td><%= link_to 'Edit', edit_command_path(command) %></td>
+        <td><%= link_to 'Destroy', command, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Command', new_command_path %>

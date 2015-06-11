@@ -1,0 +1,61 @@
+<%= form_for(@command) do |f| %>
+  <% if @command.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@command.errors.count, "error") %> prohibited this command from being saved:</h2>
+
+      <ul>
+      <% @command.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numclient %><br>
+    <%= f.number_field :numclient %>
+  </div>
+  <div class="field">
+    <%= f.label :refproduit %><br>
+    <%= f.text_field :refproduit %>
+  </div>
+  <div class="field">
+    <%= f.label :article %><br>
+    <%= f.text_field :article %>
+  </div>
+  <div class="field">
+    <%= f.label :descriptif %><br>
+    <%= f.text_field :descriptif %>
+  </div>
+  <div class="field">
+    <%= f.label :numcommande %><br>
+    <%= f.number_field :numcommande %>
+  </div>
+  <div class="field">
+    <%= f.label :quantitearticle %><br>
+    <%= f.number_field :quantitearticle %>
+  </div>
+  <div class="field">
+    <%= f.label :totalprixarticle %><br>
+    <%= f.text_field :totalprixarticle %>
+  </div>
+  <div class="field">
+    <%= f.label :totalprixcommande %><br>
+    <%= f.text_field :totalprixcommande %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :produit_id %><br>
+    <%= f.number_field :produit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :validation %><br>
+    <%= f.text_area :validation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

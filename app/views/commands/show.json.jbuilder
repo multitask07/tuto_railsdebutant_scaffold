@@ -1,0 +1,1 @@
+json.extract! @command, :id, :numclient, :refproduit, :article, :descriptif, :numcommande, :quantitearticle, :totalprixarticle, :totalprixcommande, :date, :produit_id, :validation, :created_at, :updated_at

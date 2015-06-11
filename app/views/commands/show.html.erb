@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numclient:</strong>
+  <%= @command.numclient %>
+</p>
+
+<p>
+  <strong>Refproduit:</strong>
+  <%= @command.refproduit %>
+</p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @command.article %>
+</p>
+
+<p>
+  <strong>Descriptif:</strong>
+  <%= @command.descriptif %>
+</p>
+
+<p>
+  <strong>Numcommande:</strong>
+  <%= @command.numcommande %>
+</p>
+
+<p>
+  <strong>Quantitearticle:</strong>
+  <%= @command.quantitearticle %>
+</p>
+
+<p>
+  <strong>Totalprixarticle:</strong>
+  <%= @command.totalprixarticle %>
+</p>
+
+<p>
+  <strong>Totalprixcommande:</strong>
+  <%= @command.totalprixcommande %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @command.date %>
+</p>
+
+<p>
+  <strong>Produit:</strong>
+  <%= @command.produit_id %>
+</p>
+
+<p>
+  <strong>Validation:</strong>
+  <%= @command.validation %>
+</p>
+
+<%= link_to 'Edit', edit_command_path(@command) %> |
+<%= link_to 'Back', commands_path %>
